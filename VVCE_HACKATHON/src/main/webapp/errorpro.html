@@ -1,0 +1,48 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Error - Project Upload Failed</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2dede;
+            text-align: center;
+            padding: 50px;
+        }
+        h1 {
+            color: #d9534f;
+        }
+        p {
+            font-size: 18px;
+            color: #333;
+        }
+        .button {
+            background-color: #d9534f;
+            color: #ffffff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            text-decoration: none;
+        }
+        .button:hover {
+            background-color: #c9302c;
+        }
+    </style>
+</head>
+<body>
+    <h1>Oops! Something Went Wrong.</h1>
+    <p>There was an error while uploading your project. Please try again.</p>
+    
+    <!-- Link to go back to the project upload form -->
+    <a href="ProjectUpload.jsp" class="button">Try Again</a>
+    
+    <br><br>
+    <!-- Link to go back to the homepage or dashboard -->
+    <a href="Dashboard.jsp" class="button">Go to Dashboard</a>
+</body>
+</html>

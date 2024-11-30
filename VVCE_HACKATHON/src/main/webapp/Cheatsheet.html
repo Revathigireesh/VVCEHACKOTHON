@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edu-venture</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f6f9;
+        }
+        header {
+            background-color: #29b313;
+            color: #ecf0f1;
+            padding: 1rem;
+            text-align: center;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            padding: 2rem;
+        }
+        .learning-paths-header {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        .learning-paths-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        .path-card {
+            background-color: #E8F5E9;
+            border-radius: 8px;
+            box-shadow:8px 8px 8px 8px rgba(0.5, 0.5, 0.5, 0.1);
+            padding: 1.5rem;
+            transition: transform 0.2s;
+        }
+        .path-card:hover {
+            transform: scale(1.05);
+        }
+        .path-card h3 {
+            margin: 0 0 1rem;
+            color: #2c3e50;
+        }
+        .path-card p {
+            color: #7f8c8d;
+            margin-bottom: 1rem;
+        }
+        .path-card button {
+            background-color: #309523;
+            color: #ffffff;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+        .path-card button:hover {
+            background-color: #0f7914;
+        }
+        @media (max-width:1024px){
+            .path-card{
+                width:70%;
+                position: relative;
+                margin-left: 50px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Courses</h1>
+    </header>
+    <div class="container">
+        <div class="learning-paths-header">
+            <h2>Choose Your Path</h2>
+            <p>Take the next step in your learning journey by selecting a customized path tailored to your goals.</p>
+        </div>
+        <div class="learning-paths-grid">
+     
+            <div class="path-card">
+                <h3>Web development</h3>
+                <p>Learn HTML, CSS, and JavaScript to build your first web pages and interactive elements.</p>
+                <a href="https://www.codewithharry.com/notes/"><button>Start Learning</button></a>
+            </div>
+            <div class="path-card">
+                <h3>Data Structure</h3>
+                <p>Discover the fundamentals of data structures, master efficient algorithms.</p>
+                <a href="https://www.geeksforgeeks.org/sde-sheet-a-complete-guide-for-sde-preparation/"><button>view here</button></a>
+            </div>
+            <div class="path-card">
+                <h3>DBMS (MySql)</h3>
+                <p>Master database concepts with MySQL, for data organization and retrieval.</p>
+                 <a href="https://www.codewithharry.com/notes/"><button>View here</button></a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edu-Venture</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+        background-color: #e8f5e9;
+            color: black;
+            
+            text-align: center;
+            font-family:'Times New Roman', Times, serif;
+            
+            
+        }
+        nav {
+            display: flex;
+            justify-content: right;
+            padding: 20px 0;
+            background-color: #29B313;
+        }
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+            font-size: 20px;
+        }
+        nav a:hover {
+            background-color: #ffffff;
+            border-radius: 5px;
+            color: black;
+        }
+        
+        #hero {
+            text-align: center;
+            padding: 4rem;
+            background-color: #e8f5e9;
+        }
+        #hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        #hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+        .btn-login {
+            background-color: #4CAF50;
+            color: white; 
+            border: none;
+            padding: 10px 10px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 25px;
+            text-decoration:none;
+        }
+        .btn-login:hover {
+            background-color: #ffffff;
+            color:#29B313;
+            border: 2px solid #29B313;
+        }
+        #features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            padding: 2rem;
+        }
+        .feature {
+            background-color: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .feature h2 {
+            color: #4CAF50;
+            margin-bottom: 1rem;
+        }
+        #call-to-action {
+            text-align: center;
+            padding: 2rem;
+            background-color:  #29B313;
+            color: white;
+        }
+        #call-to-action h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+        #call-to-action a {
+            background-color: white;
+            color:  #29B313;
+            border: 2px solid white;
+            padding: 0.75rem 1.5rem;
+            font-size: 1rem;
+            cursor: pointer;
+            border-radius: 5px;
+            text-decoration:none;
+            
+        }
+        #call-to-action button:hover {
+            background-color: #e8f5e9;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #333;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero">
+            <h1>Welcome to Edu-Venture</h1>
+            <p>Experience personalized learning like never before.</p>
+            <a href="Signup.html" class="btn-login">Get Started</a>
+        </section>
+
+        <section id="features">
+            <div class="feature" id="learning-profiles">
+                <h2>Learning Style Profiles</h2>
+                <p>Identify your preferred learning methods and choose the best educational activities for your growth.</p>
+            </div>
+            <div class="feature" id="custom-paths">
+                <h2>Customizable Learning Paths</h2>
+                <p>Create custom courses from various modules tailored to your learning style.</p>
+            </div>
+            <div class="feature" id="resource-library">
+                <h2>Resource Library</h2>
+                <p>Access a comprehensive library of articles, videos, worksheets, and interactive activities.</p>
+            </div>
+            <div class="feature" id="self-paced-tools">
+                <h2>Self-Paced Learning Tools</h2>
+                <p>Set your own schedules, track progress, and manage your learning pace efficiently.</p>
+            </div>
+            <div class="feature" id="collaborative-spaces">
+                <h2>Collaborative Learning Spaces</h2>
+                <p>Engage with peers through group projects and study rooms for shared learning experiences.</p>
+            </div>
+        </section>
+
+        <section id="call-to-action">
+            <h2>Join Today</h2>
+            <p>Start your personalized learning journey with LearFlex.</p>
+            <a href="Login.html">Sign Up</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Edu-Venture. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaming Zone</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #E8F5E9;
+        }
+
+        header {
+            background-color: #29B313;
+            color: white;
+            padding: 35px;
+            text-align: center;
+            font-size: 30px;
+            font-weight: bold;
+        }
+
+        .dashboard-title {
+            font-size: 30px;
+            font-weight: bold;
+            padding: 50px;
+            display: flex;
+            align-items: center;
+        }
+
+        .dashboard-title a {
+            text-decoration: none;
+            color: rgb(0, 0, 0);
+            margin-right: 10px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 40px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .section-title {
+            font-size: 25px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #29B313;
+            padding: 20px;
+        }
+
+        .games-row {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(45%, 1fr));
+            gap: 20px;
+        }
+
+        .game-card {
+            padding: 20px;
+            border: 2px solid #ddd;
+            border-radius: 10px;
+            overflow: hidden;
+            text-align: center;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: white;
+        }
+
+        .game-card img {
+            width: 80%;
+            height: auto;
+            display: block;
+            margin: 0 auto 10px;
+        }
+
+        .play-now-container {
+            margin: 15px 0;
+        }
+
+        .game-card p {
+            font-size: 20px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .play-now {
+            background-color: #29B313;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 18px;
+        }
+
+        .play-now:hover {
+            background-color: #1e8e10;
+        }
+
+        .view-all {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .view-all button {
+            display: block;
+            width: 200px;
+            margin: 20px auto;
+            background-color: #29B313;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            font-size: 25px;
+            cursor: pointer;
+        }
+
+        .view-all button:hover {
+            background-color: #1e8e10;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        Gaming Zone
+    </header>
+
+    <div class="dashboard-title">
+        <a href="#">&lt;</a> My Dashboard
+    </div>
+
+    <div class="container">
+        <div class="section">
+            <div class="section-title">Frontend</div>
+            <div class="games-row">
+                <div class="game-card">
+                    <img src="a4.jpg" alt="CSS Diner">
+                    <div class="play-now-container">
+                        <button class="play-now" onclick="location.href='https://flukeout.github.io/'">Play Now</button>
+                    </div>    
+                    <p>CSS Diner</p>
+                </div>
+                
+                <div class="game-card">
+                    <img src="a5.jpg" alt="Flexbox Froggy">
+                    <div class="play-now-container">
+                        <button class="play-now" onclick="location.href='https://flexboxfroggy.com/'">Play Now</button>
+                    </div>
+                    <p>Flexbox Froggy</p>
+                </div>
+                <div class="game-card">
+                    <img src="a7.jpg" alt="Grid Garden">
+                    <div class="play-now-container">
+                        <button class="play-now" onclick="location.href='https://cssgridgarden.com/'">Play Now</button>
+                    </div>
+                    <p>Grid Garden</p>
+                </div>
+                <div class="game-card">
+                    <img src="a6.jpg" alt="Flexbox Defense">
+                    <div class="play-now-container">
+                        <button class="play-now" onclick="location.href='http://www.flexboxdefense.com/'">Play Now</button>
+                    </div>
+                    <p>Flexbox Defense</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">Coding</div>
+            <div class="games-row">
+                <div class="game-card">
+                    <img src="a3.jpg" alt="CodeCombat">
+                    <div class="play-now-container">
+                        <button class="play-now" onclick="location.href='https://www.codecombat.com/'">Play Now</button>
+                    </div>
+                    <p>CodeCombat</p>
+                </div>
+                
+                <div class="game-card">
+                    <img src="a2.jpg" alt="Tynker">
+                    <div class="play-now-container">
+                        <button class="play-now" onclick="location.href='https://www.tynker.com/'">Play Now</button>
+                    </div>
+                    <p>Tynker</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">DBMS</div>
+            <div class="games-row">
+                <div class="game-card">
+                    <img src="a1.jpg" alt="SQL Murder Mystery">
+                    <div class="play-now-container">
+                        <button class="play-now" onclick="location.href='https://mystery.knightlab.com/'">Play Now</button>
+                    </div>
+                    <p>SQL Murder Mystery</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="view-all">
+        <button onclick="location.href='#'">View All</button>
+    </div>
+</body>
+</html>

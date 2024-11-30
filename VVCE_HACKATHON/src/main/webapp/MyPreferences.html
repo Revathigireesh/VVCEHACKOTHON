@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Learning Style</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #E8F5E9;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Header */
+        header {
+            background-color: #29B313;
+            color: white;
+            padding: 35px;
+            text-align: center;
+            font-weight: bold;
+           
+        }
+
+        /* header a {
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+            font-size: 40px;
+            position: absolute;
+            left: 20px;
+            top: 20px;
+        } */
+
+        /* Container Styles */
+        .container {
+            max-width: 800px;
+            margin: 10px auto;
+            padding: 40px;
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .learning {
+            font-size: 30px;
+            font-weight: bold;
+            padding: 50px;
+            display: flex;
+            align-items: center;
+        }
+
+        .learning a {
+            text-decoration: none;
+            color: rgb(0, 0, 0);
+            margin-right: 10px;
+            ;
+        }
+
+
+
+        h2 {
+            color: #29B313;
+            font-size: 25px;
+            margin-bottom: 20px;
+        }
+
+        .question {
+            margin-bottom: 20px;
+        }
+
+        .options label {
+            display: block;
+            margin-bottom: 10px;
+            cursor: pointer;
+            font-size: 23px;
+        }
+
+        .options input[type="radio"] {
+            margin-right: 10px;
+            cursor: pointer;
+             
+        }
+
+        /* Submit Button */
+        .submit-btn {
+            display: block;
+            width: 200px;
+            margin: 20px auto;
+            background-color: #29B313;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            text-align: center;
+            font-size: 25px;
+            cursor: pointer;
+        
+        }
+
+        .submit-btn:hover {
+            background-color: #1e8e10;
+        }
+
+        .info-row {
+            margin-bottom: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            justify-content: space-between;
+            margin-bottom: 15px;
+            padding: 20px;
+            border: 3px solid #29B313; /* Adds a box around the question */
+            border-radius: 10px; /* Optional: Adds rounded corners */
+            background-color: #fff; /* Optional: Adds a white background inside the box */
+        }
+
+        .info-row label {
+            font-weight: bold;
+        }
+
+
+        
+    </style>
+</head>
+<body>
+
+<header>
+    <div style="font-size: 30px;" >
+         My Learning Style
+    </div>
+</header>
+
+<div class="learning">
+    <a href="#">&lt;</a> Learning Style
+</div>
+
+<div class="container">
+    <!-- Question 1 -->
+    <div class="info-row">
+        <h2>What type of learning mode do you prefer?</h2>
+        <div class="options">
+            <label><input type="radio" name="learning-mode" value="video"> Video-based lessons</label>
+            <label><input type="radio" name="learning-mode" value="interactive"> Hand-on practice and simulations</label>
+            <label><input type="radio" name="learning-mode" value="reading"> Reading articles and documents</label>
+            <label><input type="radio" name="learning-mode" value="reading"> Cheat sheets</label>
+        </div>
+    </div>
+
+    <!-- Question 2 -->
+    <div class="info-row">
+        <h2>How do you prefer to study?</h2>
+        <div class="options">
+            <label><input type="radio" name="study-preference" value="own-pace"> At my own pace</label>
+            <label><input type="radio" name="study-preference" value="schedule"> With a set schedule</label>
+            <label><input type="radio" name="study-preference" value="focused"> In focused bursts with breaks</label>
+            <label><input type="radio" name="study-preference" value="group"> In group study sessions</label>
+        </div>
+    </div>
+
+    <!-- Question 3 -->
+    <div class="info-row">
+        <h2>How do you prefer to track your progress?</h2>
+        <div class="options">
+            <label><input type="radio" name="track-progress" value="progress-bar"> Progress bar</label>
+            <label><input type="radio" name="track-progress" value="certificates"> Badges or certificates</label>
+            <label><input type="radio" name="track-progress" value="quizzes"> Regular quizzes</label>
+        </div>
+    </div>
+
+    <!-- Question 4 -->
+    <div class="info-row">
+        <h2>What difficulty level do you prefer?</h2>
+        <div class="options">
+            <label><input type="radio" name="difficulty-level" value="easy"> Easy</label>
+            <label><input type="radio" name="difficulty-level" value="medium"> Medium</label>
+            <label><input type="radio" name="difficulty-level" value="hard"> Hard</label>
+            <label><input type="radio" name="difficulty-level" value="customizable"> Customizable</label>
+        </div>
+    </div>
+
+    <!-- Question 5 -->
+    <div class="info-row">
+        <h2>How often do you want new lessons?</h2>
+        <div class="options">
+            <label><input type="radio" name="lesson-frequency" value="daily"> Daily</label>
+            <label><input type="radio" name="lesson-frequency" value="few-times"> A few times a week</label>
+            <label><input type="radio" name="lesson-frequency" value="weekly"> Weekly</label>
+            <label><input type="radio" name="lesson-frequency" value="weekends"> Weekends</label>
+        </div>
+    </div>
+
+    <!-- Question 6 -->
+    <div class="info-row">
+        <h2>What do you prefer for practice?</h2>
+        <div class="options">
+            <label><input type="radio" name="practice-preference" value="quizzes"> Quizzes</label>
+            <label><input type="radio" name="practice-preference" value="assignments"> Assignments</label>
+            <label><input type="radio" name="practice-preference" value="examples"> Real examples</label>
+            <label><input type="radio" name="practice-preference" value="Flashcards"> Flashcards</label>
+        </div>
+    </div>
+
+    <!-- Question 7 -->
+    <div class="info-row">
+        <h2>How fast do you like to move?</h2>
+        <div class="options">
+            <label><input type="radio" name="pace" value="quickly"> Quickly</label>
+            <label><input type="radio" name="pace" value="steady"> Steady</label>
+            <label><input type="radio" name="pace" value="adjustable"> Adjusting speed</label>
+            <label><input type="radio" name="pace" value="slowly"> Slowly</label>
+        </div>
+    </div>
+
+    <!-- Question 8 -->
+    <div class="info-row">
+        <h2>How do you learn from mistakes?</h2>
+        <div class="options">
+            <label><input type="radio" name="learning-from-mistakes" value="feedback"> Instant feedback</label>
+            <label><input type="radio" name="learning-from-mistakes" value="activities"> After activities</label>
+            <label><input type="radio" name="learning-from-mistakes" value="own"> On my own</label>
+            <label><input type="radio" name="learning-from-mistakes" value="lessons "> End of lesson</label>
+        </div>
+    </div>
+    <br>
+
+    <a href="Dashboard.jsp"><button class="submit-btn">Submit</button></a>
+</div>
+
+</body>
+</html>
